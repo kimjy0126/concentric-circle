@@ -51,6 +51,10 @@ fn main() {
 
                 let mut cnt = 0;
 
+                ellipse(color::RED,
+                        rectangle::square(app.recent_point[0] - 5., app.recent_point[1] - 5., 5. * 2.),
+                        transform, g);
+
                 for p in app.clicked_point.iter() {
                     let radius: f64 = p.1.elapsed().unwrap().as_millis() as f64;
                     if radius > 1000.0 {
@@ -58,7 +62,7 @@ fn main() {
                     } else {
                         let fadeout_color: [f32; 4] = [0., 0., 0., 1. - radius as f32 / 1000.];
                         circle_arc(fadeout_color, 5.0, 0.0, f64::_360() as f64 * 1.2,
-                                    [p.0[0] - radius, p.0[1] - radius, radius * 2.0, radius * 2.0],
+                                    [p.0[0] - radius, p.0[1] - radius, radius * 2., radius * 2.],
                                     transform, g);
                     }
                 }
