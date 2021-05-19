@@ -23,7 +23,7 @@ pub struct App {
 fn main() {
     let opengl = OpenGL::V3_2;
 
-    let mut window: Window = WindowSettings::new("Concentric Circle", [1000, 1000])
+    let mut window: Window = WindowSettings::new("Moving Circle", [1000, 1000])
         .graphics_api(opengl)
         .fullscreen(true)
         .exit_on_esc(true)
