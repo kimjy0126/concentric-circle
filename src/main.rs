@@ -54,7 +54,7 @@ fn main() {
                         circle_arc(fadeout_color, 5.0, 0.0, f64::_360() as f64 * 1.2,
                                     [p.0[0] - radius, p.0[1] - radius, radius * 2.0, radius * 2.0],
                                     transform, g);
-                        }
+                    }
                 }
                 for _ in 0..cnt {
                     app.clicked_point.pop_front();
