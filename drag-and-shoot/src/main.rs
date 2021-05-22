@@ -61,7 +61,6 @@ fn main() {
                 start_of_arrow[0] = app.current_pos[0] + 30. * app.arrow[0] / arrow_size;
                 start_of_arrow[1] = app.current_pos[1] + 30. * app.arrow[1] / arrow_size;
                 let mut end_of_arrow: Position = [0.0, 0.0];
-                end_of_arrow = start_of_arrow + app.arrow;
                 end_of_arrow[0] = start_of_arrow[0] + app.arrow[0];
                 end_of_arrow[1] = start_of_arrow[1] + app.arrow[1];
 
